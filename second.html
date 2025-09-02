@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url("IMAGES/page2.png") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Back arrow button */
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .back-button:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.7));
+    }
+  </style>
+</head>
+<body>
+  <!-- Arrow icon (click to go back to home page) -->
+  <a href="index.html">
+    <img src="IMAGES/arrow.png" alt="Back" class="back-button">
+  </a>
+</body>
+</html>
