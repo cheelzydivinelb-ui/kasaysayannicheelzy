@@ -26,6 +26,22 @@
       display: block;
     }
 
+/* Back arrow button */
+    .back-button {
+      position: absolute;
+      top: 60px;
+      left: 20px;
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .back-button:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.7));
+    }
+
     /* Next arrow button */
     .next-button {
       position: absolute;
@@ -48,9 +64,14 @@
     <!-- Background -->
     <img src="IMAGES/bunso.png" class="bg" alt="Second Page Background">
 
+    <!-- Back arrow -->
+    <a href="second.html">
+      <img src="IMAGES/arrow.png" alt="Back" class="back-button">
+    </a>
+
     <!-- Next arrow -->
     <a href="index.html">
-      <img src="IMAGES/next.png" alt="Next" class="next-button"> 
+      <img src="IMAGES/next.png" alt="Next" class="next-button">
     </a>
   </div>
 </body>
