@@ -2,38 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Second Page</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: url("IMAGES/cheeniee.png") no-repeat center center fixed;
-      background-size: cover;
-      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #000; /* fallback background */
     }
 
-    /* Back arrow button */
-    .back-button {
+    .layout-container {
+      position: relative;
+      width: 1350px;   /* same as index.html */
+      height: 700px;
+    }
+
+    /* Main background */
+    .layout-container img.bg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* Next arrow button */
+    .next-button {
       position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 60px;
-      height: 60px;
+      bottom: 80px;   /* adjust position */
+      right: 20px;    /* move to bottom-right */
+      width: 150px;
+      height: 150px;
       cursor: pointer;
       transition: transform 0.3s ease, filter 0.3s ease;
     }
 
-    .back-button:hover {
+    .next-button:hover {
       transform: scale(1.1);
-      filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.7));
+      filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.7));
     }
   </style>
 </head>
 <body>
-  <!-- Arrow icon (click to go back to home page) -->
-  <a href="index.html">
-    <img src="IMAGES/arrow.png" alt="Back" class="back-button">
-  </a>
+  <div class="layout-container">
+    <!-- Background -->
+    <img src="IMAGES/personal.png" class="bg" alt="Second Page Background">
+
+    <!-- Next arrow -->
+    <a href="third.html">
+      <img src="IMAGES/next.png" alt="Next" class="next-button"> 
+    </a>
+  </div>
 </body>
 </html>

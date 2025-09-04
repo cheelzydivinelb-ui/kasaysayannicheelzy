@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AKING KASAYSAYAN</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #000; /* fallback background */
+        }
+
+        .layout-container {
+            position: relative;
+            width: 1350px;   /* same size as your bg.png */
+            height: 700px;
+        }
+
+        /* Main background */
+        .layout-container img.bg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* Icons */
+        .icon {
+            position: absolute;
+            width: 150px; /* adjust to your design */
+            cursor: pointer;
+            transition: transform 0.2s ease, filter 0.2s ease;
+        }
+
+        /* Hover effect: grow + glow */
+        .icon:hover {
+            transform: scale(1.15);
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+        }
+
+        /* Example positions (adjust based on Canva layout) */
+        .icon.prof { top: 200px; left: 100px;}
+        .icon.loc { top: 200px; right: 850px; }
+        .icon.medal { bottom: 220px; right: 600px; }
+        .icon.heart { bottom: 255px; right: 350px; }
+        .icon.pets { bottom: 260px; left: 1080px; }
+
+        /* Text image at bottom center */
+        .bottom-text {
+            position: absolute;
+            bottom: 20px;  /* distance from bottom */
+            left: 50%;
+            transform: translateX(-50%); /* center horizontally */
+            width: 600px;  /* adjust size as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="layout-container">
+        <!-- Background -->
+        <img src="IMAGES/bg.png" class="bg" alt="Main Background">
+
+        <!-- Clickable icons -->
+        <a href="second.html">
+            <img src="IMAGES/prof.png" class="icon prof" alt="Profile Icon">
+        </a>
+        <a href="fourth.html">
+            <img src="IMAGES/loc.png" class="icon loc" alt="Location Icon">
+        </a>
+        <a href="fifth.html">
+            <img src="IMAGES/medal.png" class="icon medal" alt="Medal Icon">
+        </a>
+        <a href="ninth.html">
+            <img src="IMAGES/pets.png" class="icon pets" alt="Pets Icon">
+        </a>
+        <a href="eight.html">
+            <img src="IMAGES/heart.png" class="icon heart" alt="Heart Icon">
+        </a>
+
+        <!-- Text image at bottom -->
+        <img src="IMAGES/thank.png" class="bottom-text" alt="Bottom Text">
+    </div>
+</body>
+</html>
